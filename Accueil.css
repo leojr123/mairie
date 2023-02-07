@@ -1,0 +1,166 @@
+body
+{
+    background-color: #FAD8A7;
+    margin: 0;
+    box-sizing:border-box;
+}
+.parent-1 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1.2fr repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-header
+{ 
+    background-color: #006F9F;
+    margin-bottom: 40px;
+    grid-area: 1 / 1 / 2 / 8; 
+}
+.fond-logo
+{
+    display: flex;
+    width: 368px;
+    height: 349px;
+    background: #FFFFFF;
+    border-radius: 10px 10px 174.5px 10px;
+     grid-area: 1 / 4 / 2 / 5; 
+}
+.logo
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1 / 4 / 2 / 5; 
+}
+.logo img
+{
+    border-bottom-right-radius: 140px;
+}
+.btn-mairie
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.btn-mairie p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+.btn-mairie p:hover
+{
+    color: #000000;
+}
+.btn-pratique
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.btn-pratique p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+.btn-pratique p:hover
+{
+    color: #000000;
+}
+.btn-vivre
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 3 / 2 / 4; 
+}
+.btn-vivre p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+.btn-vivre p:hover
+{
+    color: #000000;
+}
+.btn-entreprendre
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 5 / 2 / 6; 
+}
+.btn-entreprendre p:hover
+{
+    color: #000000;
+}
+.btn-entreprendre p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+.btn-découvrir
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 6 / 2 / 7; 
+}
+.btn-découvrir p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+.btn-découvrir p:hover
+{
+    color: #000000;
+}
+.btn-contact
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 7 / 2 / 8; 
+}
+.btn-contact p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+.btn-contact p:hover
+{
+    color: #000000;
+}
