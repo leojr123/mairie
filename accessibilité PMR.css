@@ -292,11 +292,17 @@ nav {
     }
     
     .piv1 { grid-area: 1 / 1 / 2 / 2; }
-    .piv2 { grid-area: 1 / 4 / 2 / 5; }
-    .piv3 { grid-area: 2 / 1 / 3 / 5;  white-space: pre }
-
-    .boutton{border-radius: 100%;
-        color: #298080;}
+    .piv2 { grid-area: 1 / 4 / 2 / 5; grid;place-items: center; }
+    .piv3 { grid-area: 2 / 1 / 3 / 5;  }
+    
+    .boutton{
+        background: #298080;
+        box-shadow: 8px 8px 4px #000000;
+        border-radius: 100px;
+        
+        width: 400px;
+        height: 88px;
+    }
         
                 .titre{font-size: 300%; 
                     font-weight: bold;

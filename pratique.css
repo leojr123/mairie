@@ -309,8 +309,10 @@ nav {
             color:  #006F9F ;
             font-family:'saudagar'; sans-serif ;}
     
-.boutton{border-radius: 100%;
-color: #298080;}
+.boutton{
+    background: #298080;
+    box-shadow: 8px 8px 4px #000000;
+    border-radius: 100px;}
 
         .titre{font-size: 300%; 
             font-weight: bold;
@@ -319,9 +321,9 @@ color: #298080;}
                 font-weight: bold;
                 font-family:'saudagar'; sans-serif ;}
             .texte{font-size: 250%; 
-            font-family: 'oswald'; sans-serif;} 
+            font-family: 'oswald' ;sans-serif;} 
                .texte2{font-size: 250%; 
-                font-family: 'oswald'; sans-serif;
+                font-family: 'oswald' ;sans-serif;
             font-weight: bold ;
         text-decoration: underline;}
         .texte3{font-size: 250%; 
