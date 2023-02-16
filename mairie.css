@@ -1,10 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/saudagar');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.cdnfonts.com/css/saudagar');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 body
 {
     background-color: #FAD8A7;
     margin: 0;
     box-sizing:border-box;
+}
+html
+{
+    scroll-behavior: smooth;
 }
 .parent-1 
 {
@@ -21,26 +27,26 @@ body
 }
 .fond-logo
 {
-    display: flex;
-    width: 368px;
-    height: 349px;
-    background: #FFFFFF;
-    border-radius: 10px 10px 174.5px 10px;
     grid-area: 1 / 4 / 2 / 5; 
 }
-.logo
-{ 
+.fond-logo img
+{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(./logo_1_2\ 2.png);
-    border-bottom-right-radius: 150px;
+    border-radius: 10px 10px 110.5px 10px;
+}
+.logo
+{ 
     grid-area: 1 / 4 / 2 / 5; 
 }
-/* .logo img
+.logo img
 {
-    border-bottom-right-radius: 150px;
-} */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 110.5px 10px;
+}
 .btn-mairie
 { 
     display: flex;
@@ -53,10 +59,10 @@ body
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 42px;
     margin-bottom: 50px;
-    color: #FFFFFF;
+    color: #FAD8A7;
 }
 .btn-mairie p:hover
 {
@@ -74,7 +80,7 @@ body
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 42px;
     margin-bottom: 50px;
     color: #FFFFFF;
@@ -95,7 +101,7 @@ body
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 42px;
     margin-bottom: 50px;
     color: #FFFFFF;
@@ -120,7 +126,7 @@ body
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 42px;
     margin-bottom: 50px;
     color: #FFFFFF;
@@ -128,7 +134,7 @@ body
 .btn-découvrir
 { 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     grid-area: 1 / 6 / 2 / 7; 
 }
@@ -137,10 +143,9 @@ body
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 42px;
     margin-bottom: 50px;
-    color: #FFFFFF;
 }
 .btn-découvrir p:hover
 {
@@ -158,7 +163,7 @@ body
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 42px;
     margin-bottom: 50px;
     color: #FFFFFF;
@@ -188,11 +193,11 @@ nav {
   .menu > li {
     float: left;
     color: #FFFFFF;
-    width: 215px;
-    height: 23px;
+    width: 125px;
+    height: 40px;
     line-height: 25px;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
     z-index: 1;
     position: relative;
   }
@@ -206,7 +211,7 @@ nav {
     transition: all 300ms ease-in-out;
   }
   .sub-menu li {
-    padding: 10px 0;
+    padding: 5px 0;
     transform: scale(0);
     transform-origin: top center;
     transition: all 300ms ease-in-out;
@@ -229,7 +234,7 @@ nav {
     transform: scale(1.3);
   }
   .menu > li:hover .sub-menu {
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
 
   li{
@@ -246,11 +251,21 @@ nav {
     grid-row-gap: 0px;
     }
     
-    .hiv1 { grid-area: 1 / 1 / 2 / 2; }
+    .hiv1 { 
+        background-image: url(./Images_Berck/mairie_1.jpg);
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37vh;
+    border-bottom: solid 10px #006F9F;
+        grid-area: 1 / 1 / 2 / 2; 
+    }
     .hiv2 { grid-area: 2 / 1 / 3 / 2; background-color: #006F9F; }
 
-.bare{width: 100%;
-height: 10px;}   
+/* .bare{width: 100%;
+height: 10px;}    */
 
     .parent3 {
         display: grid;
@@ -263,10 +278,11 @@ height: 10px;}
         .riv1 { grid-area: 1 / 1 / 2 / 2; }
 
         .histoire{
-            font-size: 500%;
+            font-size: 70px;
             font-weight: bold;
             color:  #006F9F ;
             font-family:'saudagar'; sans-serif ;
+            text-align: center;
         }
         .parent4 {
             display: grid;
@@ -281,10 +297,12 @@ height: 10px;}
             .giv3 { grid-area: 3 / 1 / 4 / 2; }
 
 
-            .titre{font-size: 300%; 
+            .titre{font-size: 50px; 
             font-weight: bold;
-            font-family:'saudagar'; sans-serif ;}
-            .texte{font-size: 250%; 
+            font-family:'saudagar'; sans-serif ;
+            color: #006F9F; 
+        }
+            .texte{font-size: 30px; 
             font-family: 'oswald'; sans-serif;}
 
 
@@ -341,16 +359,16 @@ height: 10px;}
                         .parent8 {
                             display: grid;
                             grid-template-columns: 0.5fr 1fr;
-                            grid-template-rows: 0.5fr repeat(3, 1fr);
+                            /* grid-template-rows: 0.5fr repeat(3, 1fr); */
                             grid-column-gap: 0px;
                             grid-row-gap: 0px;
                             }
                             
                             .miv1 { grid-area: 1 / 1 / 2 / 2; }
                             .miv2 { grid-area: 2 / 1 / 5 / 2; }
-                            .miv3 { grid-area: 2 / 2 / 3 / 3; }
+                            /* .miv3 { grid-area: 2 / 2 / 3 / 3; } */
                             .miv4 { grid-area: 3 / 2 / 4 / 3; }
-                            .miv5 { grid-area: 4 / 2 / 5 / 3; }
+                            /* .miv5 { grid-area: 4 / 2 / 5 / 3; } */
 
                             .image1{position: absolute;}
                             .elu{font-size: 400%;  
@@ -363,7 +381,7 @@ height: 10px;}
                             .parent9 {
                                 display: grid;
                                 grid-template-columns: 0.5fr 5fr 0.5fr;
-                                grid-template-rows: 0.5fr 5fr 0.5fr;
+                                /* grid-template-rows: 0.5fr 5fr 0.5fr; */
                                 grid-column-gap: 0px;
                                 grid-row-gap: 0px;
                                 }
@@ -372,135 +390,129 @@ height: 10px;}
 
 
 
-                              .wiv1 { grid-area: 2 / 2 / 3 / 3; }
-                                body
-                                {
-                                    background-color: #FAD8A7;
-                                    margin: 0;
-                                    box-sizing:border-box;
-                                }
-                                html
-                                {
-                                    scroll-behavior: smooth;
-                                }
-                                .parent-7 
-                                {
-                                    display: grid;
-                                    grid-template-columns: 1.5fr repeat(7, 1fr);
-                                    grid-template-rows: 0.5fr 1fr;
-                                    grid-column-gap: 0px;
-                                    grid-row-gap: 0px;
-                                }
-                                .bloc-footer
-                                { 
-                                    display: flex;
-                                    grid-area: 1 / 1 / 3 / 9; 
-                                }
-                                .bloc-footer-2
-                                { 
-                                    background: #006F9F;
-                                    width: auto;
-                                    height: 220px;
-                                    grid-area: 2 / 1 / 3 / 9; 
-                                }
-                                .fond-logo-footer 
-                                { 
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    grid-area: 2 / 1 / 3 / 2; 
-                                }
-                                .fond-logo-footer img
-                                {
-                                    border-radius: 10px 10px 47.5px 10px;
-                                
-                                }
-                                .logo-footer
-                                { 
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    grid-area: 2 / 1 / 3 / 2; 
-                                }
-                                .logo-footer img
-                                {
-                                    border-radius: 10px 10px 47.5px 10px;
-                                }
-                                .info-footer
-                                { 
-                                    font-family: 'Oswald', sans-serif;
-                                    font-style: normal;
-                                    font-weight: 500;
-                                    font-size: 15px;
-                                    line-height: 23px;
-                                    letter-spacing: 0.1em;
-                                    color: #FFFFFF;
-                                    grid-area: 2 / 2 / 3 / 4; 
-                                }
-                                .mention 
-                                { 
-                                    font-family: 'Oswald', sans-serif;
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    font-size: 25px;
-                                    line-height: 30px;
-                                    color: #FFFFFF;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-around;
-                                    grid-area: 2 / 4 / 3 / 6; 
-                                }
-                                .fond-facebook 
-                                { 
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    grid-area: 2 / 6 / 3 / 7; 
-                                }
-                                .fond-facebook img
-                                {
-                                    border-radius: 60px;
-                                }
-                                .logo-facebook 
-                                { 
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    grid-area: 2 / 6 / 3 / 7; 
-                                }
-                                .logo-facebook img
-                                {
-                                    border-radius: 60px;
-                                }
-                                .fond-twitter 
-                                { 
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    grid-area: 2 / 7 / 3 / 8; 
-                                }
-                                .fond-twitter img
-                                {
-                                    border-radius: 60px;
-                                }
-                                .logo-twitter
-                                { 
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    grid-area: 2 / 7 / 3 / 8; 
-                                }
-                                .logo-twitter img
-                                {
-                                    border-radius: 60px;
-                                }
-                                .flèche-cerf-volant
-                                {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    grid-area: 1 / 8 / 3 / 9; 
-                                }
+                              .wiv1 { 
+                                display: flex;
+
+                                grid-area: 2 / 2 / 3 / 3; 
+                            }
+                              .parent-7
+                              {
+                                  display: grid;
+                                  grid-template-columns: 1.5fr repeat(7, 1fr);
+                                  grid-template-rows: 0.5fr 1fr;
+                                  grid-column-gap: 0px;
+                                  grid-row-gap: 0px;
+                              }
+                              .bloc-footer
+                              { 
+                                  display: flex;
+                                  grid-area: 1 / 1 / 3 / 9; 
+                              }
+                              .bloc-footer-2
+                              { 
+                                  background: #006F9F;
+                                  width: auto;
+                                  height: 238px;
+                                  grid-area: 2 / 1 / 3 / 9; 
+                              }
+                              .fond-logo-footer 
+                              { 
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  grid-area: 2 / 1 / 3 / 2; 
+                              }
+                              .fond-logo-footer img
+                              {
+                                  border-radius: 10px 10px 47.5px 10px;
+                              
+                              }
+                              .logo-footer
+                              { 
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  grid-area: 2 / 1 / 3 / 2; 
+                              }
+                              .logo-footer img
+                              {
+                                  border-radius: 10px 10px 47.5px 10px;
+                              }
+                              .info-footer
+                              { 
+                                  font-family: 'Oswald', sans-serif;
+                                  font-style: normal;
+                                  font-weight: 500;
+                                  font-size: 15px;
+                                  line-height: 23px;
+                                  letter-spacing: 0.1em;
+                                  color: #FFFFFF;
+                                  grid-area: 2 / 2 / 3 / 4; 
+                              }
+                              .mention 
+                              { 
+                                  font-family: 'Oswald', sans-serif;
+                                  font-style: normal;
+                                  font-weight: 700;
+                                  font-size: 25px;
+                                  line-height: 30px;
+                                  color: #FFFFFF;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: space-around;
+                                  grid-area: 2 / 4 / 3 / 6; 
+                              }
+                              .fond-facebook 
+                              { 
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  grid-area: 2 / 6 / 3 / 7; 
+                              }
+                              .fond-facebook img
+                              {
+                                  border-radius: 60px;
+                              }
+                              .logo-facebook 
+                              { 
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  grid-area: 2 / 6 / 3 / 7; 
+                              }
+                              .logo-facebook img
+                              {
+                                  border-radius: 60px;
+                              }
+                              .fond-twitter 
+                              { 
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  grid-area: 2 / 7 / 3 / 8; 
+                              }
+                              .fond-twitter img
+                              {
+                                  border-radius: 60px;
+                              }
+                              .logo-twitter
+                              { 
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  grid-area: 2 / 7 / 3 / 8; 
+                              }
+                              .logo-twitter img
+                              {
+                                  border-radius: 60px;
+                              }
+                              .flèche-cerf-volant
+                              {
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  grid-area: 1 / 8 / 3 / 9; 
+                              }
 
                                 @font-face {
                                     font-family: 'Saudagar';

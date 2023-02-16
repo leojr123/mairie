@@ -47,241 +47,247 @@
 
 
 
-body
-{
-    background-color: #FAD8A7;
-    margin: 0;
-    box-sizing:border-box;
-}
-.parent-1 
-{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) 1.2fr repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-.bloc-header
-{ 
-    background-color: #006F9F;
-    grid-area: 1 / 1 / 2 / 8; 
-}
-.fond-logo
-{
-    display: flex;
-    width: 368px;
-    height: 349px;
-    background: #FFFFFF;
-    border-radius: 10px 10px 174.5px 10px;
-    grid-area: 1 / 4 / 2 / 5; 
-}
-.logo
-{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./logo_1_2\ 2.png);
-    border-bottom-right-radius: 150px;
-    grid-area: 1 / 4 / 2 / 5; 
-}
-/* .logo img
-{
-    border-bottom-right-radius: 150px;
-} */
-.btn-mairie
-{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: 1 / 1 / 2 / 2; 
-}
-.btn-mairie p
-{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 42px;
-    margin-bottom: 50px;
-    color: #FFFFFF;
-}
-.btn-mairie p:hover
-{
-    color: #000000;
-}
-.btn-pratique
-{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: 1 / 2 / 2 / 3; 
-}
-.btn-pratique p
-{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 42px;
-    margin-bottom: 50px;
-    color: #FFFFFF;
-}
-.btn-pratique p:hover
-{
-    color: #000000;
-}
-.btn-vivre
-{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: 1 / 3 / 2 / 4; 
-}
-.btn-vivre p
-{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 42px;
-    margin-bottom: 50px;
-    color: #FFFFFF;
-}
-.btn-vivre p:hover
-{
-    color: #000000;
-}
-.btn-entreprendre
-{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: 1 / 5 / 2 / 6; 
-}
-.btn-entreprendre p:hover
-{
-    color: #000000;
-}
-.btn-entreprendre p
-{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 42px;
-    margin-bottom: 50px;
-    color: #FFFFFF;
-}
-.btn-découvrir
-{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: 1 / 6 / 2 / 7; 
-}
-.btn-découvrir p
-{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 42px;
-    margin-bottom: 50px;
-    color: #FFFFFF;
-}
-.btn-découvrir p:hover
-{
-    color: #000000;
-}
-.btn-contact
-{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: 1 / 7 / 2 / 8; 
-}
-.btn-contact p
-{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 42px;
-    margin-bottom: 50px;
-    color: #FFFFFF;
-}
-.btn-contact p:hover
-{
-    color: #000000;
-}
-
-
-.div1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 20vh;
-    background-color: #000000;
-}
-nav {
-    text-align: center;
-
-  
-  }
-  .menu {
-    display: inline-block;
-  }
-  .menu > li {
-    float: left;
-    color: #FFFFFF;
-    width: 215px;
-    height: 23px;
-    line-height: 25px;
-    cursor: pointer;
-    font-size: 40px;
-    z-index: 1;
-    position: relative;
-  }
-  .menu > li:hover
+  @import url('https://fonts.cdnfonts.com/css/saudagar');
+  @import url('https://fonts.googleapis.com/css?family=Oswald');
+  body
   {
-    color: #000000;
+      background-color: #FAD8A7;
+      margin: 0;
+      box-sizing:border-box;
   }
-  .sub-menu {
-    transform: scale(0);
-    transform-origin: top center;
-    transition: all 300ms ease-in-out;
+  html
+  {
+      scroll-behavior: smooth;
   }
-  .sub-menu li {
-    padding: 10px 0;
-    transform: scale(0);
-    transform-origin: top center;
-    transition: all 300ms ease-in-out;
-    font-size: 17px;
-    position: relative;
-    width: 139px;
-    height: 90px;
-    background: #FAD8A7;
-    border: 4px solid #000000;
+  .parent-1 
+  {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) 1.2fr repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
   }
-
-   a{
-    text-decoration: none;
-    color: rgb(8, 8, 8);
+  .bloc-header
+  { 
+      background-color: #006F9F;
+      grid-area: 1 / 1 / 2 / 8; 
   }
-  .sub-menu li:hover {
-    color: #000000;
+  .fond-logo
+  {
+      grid-area: 1 / 4 / 2 / 5; 
   }
-  .menu > li:hover .sub-menu li {
-    transform: scale(1.3);
+  .fond-logo img
+  {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px 10px 110.5px 10px;
   }
-  .menu > li:hover .sub-menu {
-    transform: scale(1.3);
+  .logo
+  { 
+      grid-area: 1 / 4 / 2 / 5; 
   }
-
-  li{
-   list-style: none;
+  .logo img
+  {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px 10px 110.5px 10px;
   }
+  .btn-mairie
+  { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: 1 / 1 / 2 / 2; 
+  }
+  .btn-mairie p
+  {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 42px;
+      margin-bottom: 50px;
+      color: #FFFFFF;
+  }
+  .btn-mairie p:hover
+  {
+      color: #000000;
+  }
+  .btn-pratique
+  { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: 1 / 2 / 2 / 3; 
+  }
+  .btn-pratique p
+  {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 42px;
+      margin-bottom: 50px;
+      color: #FAD8A7;
+  }
+  .btn-pratique p:hover
+  {
+      color: #000000;
+  }
+  .btn-vivre
+  { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: 1 / 3 / 2 / 4; 
+  }
+  .btn-vivre p
+  {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 42px;
+      margin-bottom: 50px;
+      color: #FFFFFF;
+  }
+  .btn-vivre p:hover
+  {
+      color: #000000;
+  }
+  .btn-entreprendre
+  { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: 1 / 5 / 2 / 6; 
+  }
+  .btn-entreprendre p:hover
+  {
+      color: #000000;
+  }
+  .btn-entreprendre p
+  {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 42px;
+      margin-bottom: 50px;
+      color: #FFFFFF;
+  }
+  .btn-découvrir
+  { 
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      grid-area: 1 / 6 / 2 / 7; 
+  }
+  .btn-découvrir p
+  {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 42px;
+      margin-bottom: 50px;
+      color: #FFFFFF;
+  }
+  .btn-découvrir p:hover
+  {
+      color: #000000;
+  }
+  .btn-contact
+  { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: 1 / 7 / 2 / 8; 
+  }
+  .btn-contact p
+  {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 42px;
+      margin-bottom: 50px;
+      color: #FFFFFF;
+  }
+  .btn-contact p:hover
+  {
+      color: #000000;
+  }
+  
+  
+  .div1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 20vh;
+      background-color: #000000;
+  }
+  nav {
+      text-align: center;
+  
+    
+    }
+    .menu {
+      display: inline-block;
+    }
+    .menu > li {
+      float: left;
+      color: #FFFFFF;
+      width: 125px;
+      height: 40px;
+      line-height: 25px;
+      cursor: pointer;
+      font-size: 30px;
+      z-index: 1;
+      position: relative;
+    }
+    .menu > li:hover
+    {
+      color: #000000;
+    }
+    .sub-menu {
+      transform: scale(0);
+      transform-origin: top center;
+      transition: all 300ms ease-in-out;
+    }
+    .sub-menu li {
+      padding: 5px 0;
+      transform: scale(0);
+      transform-origin: top center;
+      transition: all 300ms ease-in-out;
+      font-size: 17px;
+      position: relative;
+      width: 139px;
+      height: 90px;
+      background: #FAD8A7;
+      border: 4px solid #000000;
+    }
+  
+     a{
+      text-decoration: none;
+      color: rgb(8, 8, 8);
+    }
+    .sub-menu li:hover {
+      color: #000000;
+    }
+    .menu > li:hover .sub-menu li {
+      transform: scale(1.3);
+    }
+    .menu > li:hover .sub-menu {
+      transform: scale(1.2);
+    }
+  
+    li{
+     list-style: none;
+    }
 
   .parent2 {
     display: grid;
@@ -298,41 +304,39 @@ nav {
     .boutton{
         background: #298080;
         box-shadow: 8px 8px 4px #000000;
-        border-radius: 100px;
-        
-        width: 400px;
-        height: 88px;
+        border-radius: 100px;        
+        width: 280px;
+        height: 130px;
+        margin-top: 30px;
+        font-weight: bold;
+        font-family: 'saudagar';
     }
-        
+       .texte-2
+       {
+        font-weight: bold;
+        font-family: 'saudagar';
+        font-size: 40px;
+       } 
                 .titre{font-size: 300%; 
                     font-weight: bold;
                     font-family:'saudagar'; sans-serif ;}
                     .titre2{font-size: 280%; 
                         font-weight: bold;
                         font-family:'saudagar'; sans-serif ;}
-                    .texte{font-size: 250%; 
+                    .texte{font-size: 30px; 
                     font-family: 'oswald'; sans-serif;} 
                        .texte2{font-size: 250%; 
                         font-family: 'oswald'; sans-serif;
                     font-weight: bold ;
                 text-decoration: underline;}
-                .texte3{font-size: 250%; 
-                    font-family: 'oswald'; sans-serif;
-                font-weight: bold ;}
+                .texte3{font-size: 50px; 
+                    font-family: 'saudagar'; sans-serif;
+                font-weight: bold ;
+                color:  #006F9F ;}
         
                 @import url('https://fonts.cdnfonts.com/css/saudagar');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-body
-{
-    background-color: #FAD8A7;
-    margin: 0;
-    box-sizing:border-box;
-}
-html
-{
-    scroll-behavior: smooth;
-}
-.parent-7 
+.parent-7
 {
     display: grid;
     grid-template-columns: 1.5fr repeat(7, 1fr);
@@ -349,7 +353,7 @@ html
 { 
     background: #006F9F;
     width: auto;
-    height: 220px;
+    height: 238px;
     grid-area: 2 / 1 / 3 / 9; 
 }
 .fond-logo-footer 
